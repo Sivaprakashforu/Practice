@@ -1,0 +1,231 @@
+Employee leave list:
+Search:(button)(textbox).
+emp id.
+Emp Name.
+Designation.
+Division.
+Contact No. 
+Add(leave).(+)button.
+
+
+Home/Dashboard.
+
+Marketing.
+Sales
+Purchase
+Stores
+Production
+Payroll
+Accounts.
+Login.
+Signup.
+
+
+Customer Type Master:
+Customer type
+Short name
+Created by.
+Created Date.
+Update
+Details
+
+POS:
+Voucher No.
+Cash/Card.
+Date
+Salesman.
+Sales A/C
+Counter
+Customer Name.
+Mobile Number
+Address
+Barcode
+Code
+Item
+Unit
+Quantity
+Rate
+Discount
+
+Add(button).
+(S.No , Code , Product Name, Quantity, Sales Rate, Net Value, Tax, Discount, Total Amount).
+Tax Name and Account, Current Balance: Rupees.000. Total : 1400. Discount: 100 Net amount: 1300. Paid Amount: 1500. Given Balance:100.
+
+POS,Journal Voucher, Payment Voucher, Purchase Invoice, Receipt Voucher, Product, Purchase Order, Sales Order, Product Search, Reminder(to Purchase).
+
+Product Creation:(page)
+
+Product Name.
+Product Code.
+Bar code.
+Group
+Brand.
+Unit
+Tax
+Purchase Rate
+MRP
+Sales Rate
+Minimum Stock
+Maximum Stock
+Reorder Level
+BOM:No.
+Multiple Unit:No.
+Part No.
+Opening Stock.
+Rate:Rupees.
+Browse(button), Clear(button).
+Table
+Sno. Product Name, Product Code, Qty, Unit of Qty(kg/ltr), rate600,Unit(per kg/ltr)-Total Amount Worth
+Narration(textbox).
+Update(button),New(button),Delete(button), Close(button).
+
+Sales Quotation:(page)
+From Date:(date) to Date: (date) (radio)all, Approved, Pending.
+Cash/Credit, Salesman. (Button)Reset, Refresh.
+Table
+Sno, Date, Order No, A/C Ledger, Amount, Narration, Approved, Salesman, Done by.
+currency(Rupees). Print(Dropdown). Go(button).
+
+Barcode setting.
+Checkbox(Show MRP, Show Product code, show company name as, Show Purchase rate as),  0 to 9 label and . box, clear(button).
+Button(Save, Reset and Close).
+
+Trial Balance(Page).
+Company Name:(Label Box), From(date),To (date),Ledger:(textbox). Button(Reset and Refresh).
+Table
+S.no, Account Group, Debit, Credit.
+Total:			1000, 900.
+currency(Rupees). Print(Dropdown). Go(button).
+
+Balance Sheet(Page).
+Company Name(Label Box), To(Date) Condensed(radio) ,Detailed(Radio) (button)Reset and Refresh.
+Liability  					 |  Asset
+PDC Payable			20000		 Cash in Hand : 2800
+Suspense Account(Liability)-	20000
+Vendor				400
+Closing Stock			1855
+Net profit			145
+Difference			400
+
+Total				945		
+currency(Rupees). Print(Dropdown). Go(button).
+
+Account Ledger(Page)
+Main Details(Page).
+Ledger Name,Group(Cash in hand/credit,card), Opening Balance(credit/Debit),Narration, Group all, Search.
+Button(Save, Clear, Delete and Close).
+
+Reminder(Pages-Over Due Orders, Party On Credit Limit, Short Expiry, Stock, Personal Reminders, Service Reminder,
+
+Over Due Orders.(page)
+Account Ledger:
+Sales Order:(radio)
+Purchase Order:(radio)
+S.no, Order No, Date, Cash/ Card, Bill Amount, Narration, Due date.
+
+Party on Credit.(page)
+Account Ledger(Name).
+Current Balance.
+Credit Limit.
+
+Service Reminder.(page).
+Vechile whose Last Service crossed(20)textbox days on (date)
+S.no, Customer Name, Vehicle, Vehicle No, Last Service Date, Meter Reading. 
+
+Company(pages)-Edit company, delete, Logout, Close.
+
+Company Details:
+Name: GP.
+Address:
+Phone No.
+Mobile No.
+Email
+Website:
+Start Date
+Tin No.
+GST No.
+PAN No.
+Logo
+
+User Name.
+Password.
+Retype.
+
+Button-> Save , Reset , Close.
+
+Change Financial Year:
+Year				| 	Closed
+1-Apr-2020 to 31-Mar-2021		Checkbox
+1-Apr-2021 to 31-Mar-2022		Checkbox
+1-Apr-2022 to 31-Mar-2023		Checkbox
+1-Apr-2023 to 31-Mar-2024		Checkbox
+Button(Select, Close).
+
+Setting:
+Activate Budget, Activate Payroll, Maintain Bill by Bill, Activate Tax, Activate Interest Calculation, Use Multiple Currency , Suffix Prefix for Voucher Number Generation, Ask Confirmation For(Save or Edit, Delete, Row Remove, close)
+
+
+Product Register:
+Product Group:
+Search : (text box)
+Reset(button), Refresh(button).
+
+Table
+S.no, Product Code. Product Name.
+
+View Details(button), Close(button).
+
+Salary Voucher: (Page)
+Month: apr-2024.   Date(dropdown-Dated)
+Designation: Admin/ SE/ Trainee / Manager/ HR / Employee, Employee Code,  (radio)-Pending, Paid.
+Table
+Employee Name, Employee Code, Basic, Tax, bonus, Deduction, Advance, LOP.
+
+Narration:(textbox)  Total : label, Paying Total: label.
+
+Button-> Save , Clear, Delete , Close.
+
+Pay Slip (page)
+Salary Month(Date), Employee ID:, Employee:(name), (Radio)-All, Active, Inactive. 
+Button->ok, Close.
+
+
+Account Management System.
+
+Login Page:
+Username
+Password
+Button(login,Clear,Signup and Close)
+
+Reminder(sending that stock to low).
+
+
+Master Pages.
+Account Group, Account Ledger, Multiple Account Ledgers, Product  Group, Product, Multiple Production, Product Register, Unit, Brand, Tax, New Currency, Pricing Level, Price List, Standard Rate, Barcode, Area, MArket, Route, Master Creation, Vehicle Type, Counter, Service,  Daily Expense.
+
+Operation Pages.
+Contra Voucher, Payment Voucher, Receipt Voucher, Journal Voucher, PDC Payable, PDC Receivable, PDC Clearance, Bank Reconciliation, Vat Journal, Purchase Order, Material Receipt, Reject Out, Purchase Invoice, Purchase Return, Sales Quotation, Sales Order, Delivery Note, Rejection In, Sales Invoice, Sales Return, POS, Physical Stock, Damage Stock, Manufacturing Journal, Service Voucher, Used Stock.
+
+Transaction Record Pages.
+Contra Voucher, Payment Voucher, Receipt Voucher, Journal Voucher, PDC Payable, PDC Receivable, Vat Journal, Purchase Order, Material Receipt, Reject Out, Purchase Invoice, Purchase Return, Sales Quotation, Sales Order, Delivery Note, Rejection In, Sales Invoice, Sales Return,Physical Stock, Damage Stock, Manufacturing Journal, Service Voucher, Used Stock, Voucher Search, Voucher wise Product Search, Tailoring.
+
+
+Application Setting
+Change Current Date, Financial Year(New, Edit, Change, Close Financial Year), Settings, Barcode setting, user setting, suffix prefix setting,  change password, Personal Reminders, Invoice Declaration.
+
+Budget.
+Create Budget, Budget Report.
+
+Employee Management.
+Employee, Designation, Daily Attendance, Monthly Attendance, Holiday Settings, Pay Head, Advance Payment, Bonus/ Deduction, Salary Voucher, Pay Slip.
+
+Accounting Report.
+Profit & Loss, Balance Sheet, Trial Balance, Cash Flow, Fund Flow.
+
+Reports
+Cash Book, Bank Book, Day book, Outstanding Report, Account Summary, Stock Reports, Price List, Purchase Order, Material Receipt, Rejection Out, Purchase, Purchase Return, Sales Quotation, Sales Order, Delivery Note, Rejection  In, Sales Report, Sales Return, Physical Stock, Salesman Reports, Tax Reports, Cheque Register, Address Book, Payroll., Vat Return Report, Service Voucher, Used Stock, POS all Receivable.
+
+Help
+About us.
+
+Exit.
