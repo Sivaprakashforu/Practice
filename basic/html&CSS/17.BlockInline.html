@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="Block and Inline">
+        <title>HTML Block and Inline Elements</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+        <style>
+
+            .si{
+                width:450px;
+                line-height: 30px;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>HTML Block and Inline Elements</h1>
+        
+        <hr>
+        
+        <p>Every HTML element has a default display value, depending on what type of element it is.<br><br>
+            
+            The two most common display values are block and inline.</p>
+        
+        <h3>Block-level Elements</h3>
+        
+        <p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.<br><br>
+
+            A block-level element always takes up the full width available (stretches out to the left and right as far as it can).<br><br>
+
+            Two commonly used block elements are: &lt;p&gt; and &lt;div&gt;.<br><br>
+
+            The &lt;p&gt; element defines a paragraph in an HTML document.<br><br>
+
+            The &lt;div&gt; element defines a division or a section in an HTML document.</p>
+        
+        <h1>Block-level element.</h1>
+        <div class="si">
+        
+        &lt;address&gt;&nbsp;&nbsp; &lt;article&gt;&nbsp;&nbsp;
+        &lt;aside&gt;&nbsp;&nbsp; &lt;blockquote&gt;&nbsp;&nbsp;
+        &lt;canvas&gt;&nbsp;&nbsp;&lt;dd&gt;&lt;div&gt;&nbsp;&nbsp;
+        &lt;dl&gt;&nbsp;&nbsp;&lt;dt&gt;&nbsp;&nbsp;&lt;fieldset&gt;&nbsp;&nbsp;
+        &lt;figcaption&gt;&nbsp;&nbsp;&lt;figure&gt;&nbsp;&nbsp;
+        &lt;footer&gt;&nbsp;&nbsp;&lt;form&gt;&nbsp;&nbsp;
+        &lt;h1&gt;-&lt;h6&gt;&nbsp;&nbsp;&lt;header&gt;&lt;hr&gt;&nbsp;&nbsp;
+        &lt;li&gt;&lt;&nbsp;&nbsp;main&gt;&nbsp;&nbsp;
+        &lt;nav&gt;&nbsp;&nbsp;&lt;noscript&gt;&nbsp;&nbsp;
+        &lt;ol&gt;&nbsp;&nbsp;&lt;p&gt;&nbsp;&nbsp;
+        &lt;pre&gt;&nbsp;&nbsp;&lt;section&gt;&nbsp;&nbsp;
+        &lt;table&gt;&nbsp;&nbsp;&lt;tfoot&gt;&nbsp;&nbsp;&lt;ul&gt;&nbsp;&nbsp;&lt;video&gt;
+        </div>
+        
+        <h1>Inline Elements</h1>
+        <p>An inline element does not start on a new line.<br><br>
+
+            An inline element only takes up as much width as necessary.<br><br>
+
+            This is a &lt;span&gt; element inside a paragraph.</p>
+        <div class="si">
+        &lt;a&gt;&nbsp;&nbsp;&lt;abbr&gt;&nbsp;&nbsp;&lt;acronym&gt;&nbsp;&nbsp;
+        &lt;b&gt;&nbsp;&nbsp;&lt;bdo&gt;&nbsp;&nbsp;&lt;big&gt;&nbsp;&nbsp;&lt;br&gt;&nbsp;&nbsp;&lt;button&gt;&nbsp;&nbsp;
+        &lt;cite&gt;&nbsp;&nbsp;&lt;code&gt;&nbsp;&nbsp;&lt;dfn&gt;&nbsp;&nbsp;&lt;em&gt;&nbsp;&nbsp;
+        &lt;i&gt;&nbsp;&nbsp;&lt;img&gt;&nbsp;&nbsp;&lt;input&gt;&nbsp;&nbsp;
+        &lt;kbd&gt;&nbsp;&nbsp;&lt;label&gt;&nbsp;&nbsp;&lt;map&gt;&nbsp;&nbsp;
+        &lt;object&gt;&nbsp;&nbsp;&lt;output&gt;&nbsp;&nbsp;&lt;q&gt;&nbsp;&nbsp;
+        &lt;samp&gt;&nbsp;&nbsp;&lt;script&gt;&nbsp;&nbsp;&lt;select&gt;&nbsp;&nbsp;
+        &lt;small&gt;&nbsp;&nbsp;&lt;&lt;span&gt;&nbsp;&nbsp;&lt;strong&gt;&nbsp;&nbsp;
+        &lt;sub&gt;&nbsp;&nbsp;&lt;sup&gt;&nbsp;&nbsp;
+        &lt;textarea&gt;&nbsp;&nbsp;&lt;time&gt;&nbsp;&nbsp;
+        &lt;tt&gt;&nbsp;&nbsp;&lt;var&gt;&nbsp;&nbsp;
+        </div>
+        
+        <p style="background-color: lightgoldenrodyellow;"><mark><strong>Note:</strong></mark> An inline element cannot contain a block-level element!</p>
+        
+        <h1>The &lt;div&gt; Element</h1>
+        
+        <p>The &lt;div&gt;element is often used as a container for other HTML elements.<br><br>
+
+            The &lt;div&gt; element has no required attributes, but style, class and id are common.<br><br>
+
+            When used together with CSS, the &lt;div&gt; element can be used to style blocks of content:</p> 
+        
+        <div style="background-color:black; color:white!important; padding:20px;">
+          <h2 style="color:white!important;">London</h2>
+          <p style="color:white!important;">London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+        
+        <h1>The &lt;span&gt; Element</h1>
+        
+        <p>The &lt;span&gt; element is an inline container used to mark up a part of a text, or a part of a document.<br><br>
+
+            The &lt;span&gt;  element has no required attributes, but <strong style="background-color: antiquewhite">style, class and id</strong> are common.<br><br>
+
+            When used together with CSS, the &lt;span&gt;  element can be used to style parts of the text:</p>
+        
+        <h3>Example:</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1&gt;My First Heading&lt;/h1&gt;
+                    &lt;p&gt;My first paragraph&lt;/p&gt;
+                    &lt;p&gt;My Second paragraph&lt;/p&gt;
+                    &lt;p&gt;My Third paragraph&lt;/p&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <h1>My First Heading</h1>
+        <p>My first paragraph</p>
+        <p>My Second paragraph</p>
+        <p>My Third paragraph</p>
+        
+    
+    
+    </body>
+
+</html>

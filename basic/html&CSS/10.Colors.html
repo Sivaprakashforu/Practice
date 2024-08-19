@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="HTML Colors">
+        <title>HTML Colors</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+        <style>
+
+            .colorname h1{
+                width:300px;
+                float:left;
+                margin-left: 20px;
+                font-size: 110%;
+                padding: 10px;
+                color: white;
+                letter-spacing: 2px;
+                border:.01px solid black;
+                border-radius: 10%;
+            }
+            
+            .colorname{                
+                width:1500px; 
+                
+            }
+
+            .id{
+                clear: both;
+            }
+            
+            .id h2{
+                padding: 10px;
+                text-align: center;
+                background-color: DodgerBlue;
+                color: white;
+            }
+            
+            .tomato{
+                background-color: tomato;
+                color: white;
+                font-size:120%;
+                Padding:10px;
+            }
+            
+            .ctomato{
+                color:tomato;
+            }
+            
+            .pblue{
+                color:DodgerBlue;
+            }
+            
+            .pgreen{
+                color:MediumSeaGreen;
+            }
+            
+            .br{
+                border:2px solid tomato;
+                padding:5px;
+            }
+            
+            .bb{
+                border:2px solid DodgerBlue;
+                padding:5px;
+            }
+            .bv{
+                border:2px solid Violet;
+                padding:5px;
+            }
+            
+            .colorvalue h2{
+                text-align: center;
+                color:white;
+                padding: 5px;
+                letter-spacing: 2px;
+            }
+            
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>HTML Colors</h1>
+        
+        <hr>
+        
+        <p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+        
+        <h3>Color Names</h3>
+        
+        <p>In HTML, a color can be specified by using a color name:</p>
+        
+        <div class="colorname">
+            <h1 style="background-color:Tomato;" >Tomato</h1>
+            <h1 style="background-color:Orange;">Orange</h1>
+            <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+            <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+            <h1 style="background-color:Gray;">Gray</h1>
+            <h1 style="background-color:SlateBlue;">SlateBlue</h1>
+            <h1 style="background-color:Violet;">Violet</h1>
+            <h1 style="background-color:LightGray; color:black;">LightGray</h1>
+        </div>
+        
+        <div class="id"><h3>Background Color</h3>
+        
+        <p>You can set the background color for HTML elements:</p>
+        
+        <h2>Hello world</h2>
+            
+            <p class="tomato">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+    
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+                    &lt;p style="background-color:Tomato;"&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.&lt;/p&gt;                    
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+
+        </div>
+          
+        <div>
+        <h1>Text Color</h1>
+        
+        <p>You can set the color of text:</p>
+        
+        <h1 class="ctomato">Hello World</h1>
+        <p class="pblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        
+        <p class="pgreen">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    
+        <table style="border: 1px solid black;">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;
+                    &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.&lt;/p&gt;
+                    &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        </div>
+        
+        <div>
+            
+            <h1>Border Color</h1>
+            <p>You can set the color of borders:</p>
+            
+            <h1 class="br">Hello World</h1>
+            <h1 class="bb">Hello World</h1>
+            <h1 class="bv">Hello World</h1>
+            
+            <table style="border: 1px solid black;">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;
+                        &lt;h1 style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+                        &lt;h1 style="border:2px solid Violet;"&gt;Hello World&lt;/h1&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+        </div>
+        
+        <div class="colorvalue">
+            
+            <h1>Color Values</h1>
+            
+            <p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</p>
+            
+            <p>The following three &lt;div&gt; elements have their background color set with RGB, HEX, and HSL values:</p>
+            
+            <h2 style="background-color:rgb(255,99,71);">rgb(255, 99, 71)</h2>
+            <h2 style="background-color:#ff6347;">#ff6347</h2>
+            <h2 style="background-color: hsl(9,100%,64%);">hsl(9, 100%, 64%)</h2>
+        
+            <p>The following two &lt;div&gt; elements have their background color set with RGBA and HSLA values, which add an Alpha channel to the color (here we have 50% transparency):</p>
+            <h2 style="background-color: rgba(255,99,71,0.5);">rgba(255, 99, 71, 0.5)</h2>
+            <h2 style="background-color: hsla(9,100%,64%,0.5);">hsla(9, 100%, 64%, 0.5)</h2>
+            
+            <table style="border: 1px solid black;">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;rgb(255, 99, 71)&lt;/h1&gt;
+                        &lt;h1 style="background-color:#ff6347;"&gt;#ff6347&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;hsl(9, 100%, 64%)&lt;/h1&gt;
+                        
+                        &lt;h1 style="background-color:rgba(255,99,71,0.5);"&gt;rgba(255,99,71,0.5)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsla(9,100%,64%,0.5);"&gt;hsla(9,100%,64%,0.5)&lt;/h1&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+        </div>
+    </body>
+
+</html>

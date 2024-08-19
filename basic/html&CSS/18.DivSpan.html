@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="Div and Span Element">
+        <title>Div and Span</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+        <style>
+            
+            @counter-style img1{
+                system cyclic;
+                symbols: "\21AC" "\21C4" "\21CF" "\21DB" "\21DD" "\21F4" "\21FB";
+                suffix:"  ";
+            }
+            
+            .ulimg{
+                list-style-type: img1;
+            }
+            
+            ul{
+                line-height: 30px;
+            }
+            
+            .yellow{
+                background-color: yellow;
+            }
+            
+            .red{
+                background-color:indianred;
+            }
+            
+            .blue{
+                background-color:skyblue;
+            }
+            
+            .white{
+                color:white;
+            }
+
+            .yellowc{
+                background-color: lightyellow;
+                text-align: center;
+                margin:auto;
+                width:300px;
+            }
+            
+            .mycontainer {
+                width:100%;
+                overflow: auto;
+            }
+            .myc {
+                width:33.3%;
+                float:left;
+                text-align: center;
+            }
+            
+            .myc1 {
+              width:30%;  
+              display:inline-block;
+                text-align: center;
+            }
+            
+            .myco1 {
+                display: flex;                
+            }
+            
+            .myco{
+                width:33%;
+            }
+            
+            .myco12{
+                display: grid;
+                grid-template-columns: 20% 20% 20%;
+                text-align: center;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>HTML Div Element</h1>
+        
+        <hr>
+        
+        <p>The &lt;div&gt; element is used as a container for other HTML elements.</p>
+        
+        <h3>The &lt;div&gt; Element</h3>
+            
+        <p>The &lt;div&gt; element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.</p>
+        
+        <p>The HTML &lt;p&gt; element defines a paragraph.<br><br>
+
+            A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        
+        <h3>Example:</h3>
+        
+        <p>A &lt;div&gt; element takes up all available width:</p>
+        
+        <table style="border: 1px solid black; width:40%">
+            
+            <tr><td>Lorem Ipsum &lt;div&gt;I am a div &lt;/div&gt; dolor sit amet.</td></tr>
+            
+        </table>
+        <h3>Output: </h3>
+        Lorem Ipsum <div style="background-color: yellow">I am a div </div> dolor sit amet.
+        
+        <h3>Span</h3>
+        
+        <p>A &lt;span&gt; element which is used to color a part of a text:<br><br>
+            An inline element cannot contain a block-level element!</p>
+        <p>The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document.<br><br>
+
+            The &lt;span&gt; tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute are common.<br><br>
+
+            The &lt;span&gt; tag is much like the &lt;div&gt; element, but &lt;div&gt; is a block-level element and &lt;span&gt; is an inline element.</p>
+        
+        <h3>Example</h3>
+        
+        <table style="border: 1px solid black; width:40%">
+            
+            <tr><td>Lorem Ipsum &lt;span&gt;I am a div &lt;/span&gt; dolor sit amet.</td></tr>
+            
+        </table>
+        <h3>Output: </h3>
+        Lorem Ipsum <span style="background-color: yellow">I am a div </span> dolor sit amet.
+        
+        <br><br>
+        
+        <h1>Chapter Summary</h1>
+        
+        <ul>
+            <li class="ulimg">A block-level element always starts on a new line and takes up the full width available.</li>
+            <li class="ulimg">An inline element does not start on a new line and it only takes up as much width as necessary.</li>
+            <li class="ulimg">The &lt;div&gt; element is a block-level and is often used as a container for other HTML elements.</li>
+            <li class="ulimg">The &lt;span&gt; element is an inline container used to mark up a part of a text, or a part of a document.</li>        
+        </ul>
+        
+        <div>
+            
+            
+            <h1>&lt;div&gt; as a container</h1>
+            <p>The &lt;div&gt; element is often used to group sections of a web page together.</p>
+            
+            <div class="yellow">
+                <h2>Siva Prakash</h2>
+                <p>My Pet Name is sakkara.</p>
+                <p>My another Name is Babu.</p>
+            </div>
+             <table style="border: 1px solid black; width:40%">
+            
+                <tr><td>.yellow{background-color: yellow;}</td></tr>
+                     <tr><td>   &lt;div class="yellow"&gt;<br>
+                            &lt;h2&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                    </td></tr>
+
+            </table>
+            
+            
+            <h3>Center align a &lt;div&gt; element</h3>
+            
+            <p>If you have a &lt;div&gt;  element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.</p>
+            
+            <div class="yellowc">
+                <h2>Siva Prakash</h2>
+                <p>My Pet Name is sakkara.</p>
+                <p>My another Name is Babu.</p>
+            </div>
+            
+             <table style="border: 1px solid black; width:40%">
+            
+                <tr><td>.yellowc{background-color: yellow;text-align:center}</td></tr>
+                     <tr><td>   &lt;div class="yellowc"&gt;<br>
+                            &lt;h2&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                    </td></tr>
+
+            </table>
+            
+            <h3>Multiple &lt;div&gt; elements</h3>
+            
+            <p>You can have many &lt;div&gt; containers on the same page.</p>
+            
+            <div class="yellow">
+                <h2>Siva Prakash</h2>
+                <p>My Pet Name is sakkara.</p>
+                <p>My another Name is Babu.</p>
+            </div>
+            
+            <div class="red">
+                <h2 class="white">Siva Prakash</h2>
+                <p class="white">My Pet Name is sakkara.</p>
+                <p class="white">My another Name is Babu.</p>
+            </div>
+            
+            <div class="blue">
+                <h2 class="white">Siva Prakash</h2>
+                <p class="white">My Pet Name is sakkara.</p>
+                <p class="white">My another Name is Babu.</p>
+            </div>
+            
+            <table style="border: 1px solid black; width:40%">
+            
+                <tr><td>.yellow{background-color: yellow;text-align:center;}<br>.red{background-color: indianred;text-align:center;}<br> .blue{background-color: skyblue;text-align:center;}
+                    .white{color:white;}</td>
+                </tr>
+                     <tr><td>   &lt;div class="yellow"&gt;<br>
+                            &lt;h2&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="red"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="blue"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                    </td></tr>
+
+            </table>
+            
+            <h3>Aligning &lt;div&gt; elements side by side</h3>
+            
+            <p>When building web pages, you often want to have two or more &lt;div&gt; elements side by side, like this:</p>
+            
+            <p>There are different methods for aligning elements side by side, all include some CSS styling. We will look at the most common methods:</p>
+            
+            <h3>Float</h3>
+            
+            <p>The CSS float property was not originally meant to align &lt;div&gt; elements side-by-side, but has been used for this purpose for many years.<br><br>
+
+            The CSS float property is used for positioning and formatting content and allow elements float next to each other instead of on top of each other.</p>
+            
+            <h3>Example</h3>
+            
+            <p>How to use float to align div elements side by side:</p>
+            
+
+            <div class="container">
+            
+                <div class="yellow myc">
+                    <h2>Siva Prakash</h2>
+                    <p>My Pet Name is sakkara.</p>
+                    <p>My another Name is Babu.</p>
+                </div>
+
+                <div class="red myc">
+                    <h2 class="white">Siva Prakash</h2>
+                    <p class="white">My Pet Name is sakkara.</p>
+                    <p class="white">My another Name is Babu.</p>
+                </div>
+
+                <div class="blue myc">
+                    <h2 class="white">Siva Prakash</h2>
+                    <p class="white">My Pet Name is sakkara.</p>
+                    <p class="white">My another Name is Babu.</p>
+                </div>
+            </div>
+            
+            <table style="border: 1px solid black; width:40%">
+            
+                <tr><td>.yellow{background-color: yellow;text-align:center;}<br>.red{background-color: indianred;text-align:center;}<br> .blue{background-color: skyblue;text-align:center;}
+                    .white{color:white;}<br> .container{width:100%;overflow:auto;}<br> .myc1{width:33%;float:left;}</td>
+                </tr>
+                     <tr><td>   
+                        &lt;div class="container"&gt;<br>
+                         &lt;div class="yellow"&gt;<br>
+                            &lt;h2&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="red"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="blue"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;<br>
+                        &lt;/div&gt;
+                    </td></tr>
+
+            </table>
+            
+            
+            <div>
+                <h3>Inline-block</h3>
+                
+                <p>If you change the &lt;div&gt; element's display property from block to inline-block, the &lt;div&gt; elements will no longer add a line break before and after, and will be displayed side by side instead of on top of each other.</p>
+                
+                <h3>Example</h3>
+                
+                <p>How to use display: inline-block to align div elements side by side:</p>
+                <div>            
+                    <div class="yellow myc1">
+                        <h2>Siva Prakash</h2>
+                        <p>My Pet Name is sakkara.</p>
+                        <p>My another Name is Babu.</p>
+                    </div>
+
+                    <div class="red myc1">
+                        <h2 class="white">Siva Prakash</h2>
+                        <p class="white">My Pet Name is sakkara.</p>
+                        <p class="white">My another Name is Babu.</p>
+                    </div>
+
+                    <div class="blue myc1">
+                        <h2 class="white">Siva Prakash</h2>
+                        <p class="white">My Pet Name is sakkara.</p>
+                        <p class="white">My another Name is Babu.</p>
+                    </div>
+                </div> 
+                
+                <table style="border: 1px solid black; width:40%">
+            
+                <tr><td>.yellow{background-color: yellow;text-align:center;}<br>.red{background-color: indianred;text-align:center;}<br> .blue{background-color: skyblue;text-align:center;}
+                    .white{color:white;}<br> .myc1{width:30%;display:inline-block;}</td>
+                </tr>
+                     <tr><td>   
+                         &lt;div class="yellow myc1"&gt;<br>
+                            &lt;h2&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="red myc1"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="blue myc1"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                        
+                    </td></tr>
+
+                </table>
+            </div>
+            <div>
+                
+                <h1>Flex</h1>
+                
+                <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure without using float or positioning.<br><br>
+
+                    To make the CSS flex method work, surround the &lt;div&gt; elements with another &lt;div&gt; element and give it the status as a flex container.</p>
+                
+                <h3>Example</h3>
+                
+                <p>How to use flex to align div elements side by side:</p>
+                   <div class="myco1">            
+                        <div class="yellow myco">
+                            <h2>Siva Prakash</h2>
+                            <p>My Pet Name is sakkara.</p>
+                            <p>My another Name is Babu.</p>
+                        </div>
+
+                        <div class="red myco">
+                            <h2 class="white">Siva Prakash</h2>
+                            <p class="white">My Pet Name is sakkara.</p>
+                            <p class="white">My another Name is Babu.</p>
+                        </div>
+
+                        <div class="blue myco">
+                            <h2 class="white">Siva Prakash</h2>
+                            <p class="white">My Pet Name is sakkara.</p>
+                            <p class="white">My another Name is Babu.</p>
+                        </div>
+                    </div>  
+                <table style="border: 1px solid black; width:40%">
+            
+                <tr><td>.yellow{background-color: yellow;text-align:center;}<br>.red{background-color: indianred;text-align:center;}<br> .blue{background-color: skyblue;text-align:center;}
+                    .white{color:white;}<br> .myco1{display:flex;}<br>.myco{width:33%;}</td>
+                </tr>
+                     <tr><td> 
+                        &lt;div class="mycol"&gt;<br>
+                         &lt;div class="yellow myco"&gt;<br>
+                            &lt;h2&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="red myco"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="blue myco"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;<br>
+                     &lt;/div&gt;
+                    </td></tr>
+
+                </table>
+                
+            </div>
+            
+            <div>
+            
+                <h1>Grid</h1>
+                
+                <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.<br><br>
+
+                    Sounds almost the same as flex, but has the ability to define more than one row and position each row individually.<br><br>
+
+                    The CSS grid method requires that you surround the &lt;div&gt; elements with another &lt;div&gt; element and give the status as a grid container, and you must specify the width of each column.</p>
+                
+                <h3>Example</h3>
+                
+                <p>How to use grid to align &lt;div&gt; elements side by side:</p>
+                
+                <div class="myco12">            
+                        <div class="yellow">
+                            <h2>Siva Prakash</h2>
+                            <p>My Pet Name is sakkara.</p>
+                            <p>My another Name is Babu.</p>
+                        </div>
+
+                        <div class="red">
+                            <h2 class="white">Siva Prakash</h2>
+                            <p class="white">My Pet Name is sakkara.</p>
+                            <p class="white">My another Name is Babu.</p>
+                        </div>
+
+                        <div class="blue">
+                            <h2 class="white">Siva Prakash</h2>
+                            <p class="white">My Pet Name is sakkara.</p>
+                            <p class="white">My another Name is Babu.</p>
+                        </div>
+                </div> 
+                <table style="border: 1px solid black; width:40%">
+            
+                <tr><td>.yellow{background-color: yellow;text-align:center;}<br>.red{background-color: indianred;text-align:center;}<br> .blue{background-color: skyblue;text-align:center;}
+                    .white{color:white;}<br> .myco2{display:grid; grid-templete-columns:20% 20% 20%; text-align:center;}</td>
+                </tr>
+                     <tr><td> 
+                        &lt;div class="mycol2"&gt;<br>
+                         &lt;div class="yellow"&gt;<br>
+                            &lt;h2&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="red"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;
+                          &lt;div class="blue"&gt;<br>
+                            &lt;h2 class="white"&gt;Siva Prakash&lt;/h2&gt;<br>
+                            &lt;p class="white"&gt;My Pet Name is sakkara.&lt;/p&gt;<br>
+                            &lt;p class="white"&gt;My another Name is Babu.&lt;/p&gt;<br>
+                         &lt;/div&gt;<br>
+                     &lt;/div&gt;
+                    </td></tr>
+
+                </table>
+                
+                
+            </div>
+        </div>
+        
+    
+    
+    </body>
+
+</html>

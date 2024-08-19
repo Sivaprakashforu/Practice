@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="Images">
+        <title>Images</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+        <style>
+
+            @counter-style pic1{
+                system: cyclic;
+                symbols: "\1F5E3";// unicode code point
+                suffix: "  ";
+            }
+            
+            .picli{
+                list-style-type: pic1;
+            }
+            
+            body{
+                background-image: url(sun.jpg);
+                background-repeat: no-repeat;
+                background-attachment:fixed;
+                background-clip: border-box;
+                background-size: 100% 100%;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>HTML Images</h1>
+        
+        <hr>
+        
+        <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+        
+        <p>Images can improve the design and the appearance of a web page.<br><br></p>
+
+        <p>The HTML &lt;img&gt; tag is used to embed an image in a web page.<br><br>
+
+            Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.<br><br>
+
+            The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.<br><br>
+
+            The &lt;img&gt; tag has two required attributes:</p>
+
+            <ul>
+                <li>src - Specifies the path to the image</li>
+                <li>alt - Specifies an alternate text for the image</li>
+            </ul>
+        <h3>Example:</h3>
+    
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1&gt;HTML Image&lt;/h1&gt;
+                    &lt;img src="sun.jpg" alt="Sun" width="500" height="333"&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <h2>HTML Image</h2>
+        <img src="sun.jpg" alt="Sun" width="500" height="333">
+        
+        <h1>The src Attribute</h1>
+        <p>The required src attribute specifies the path (URL) to the image.<br><br>
+
+            Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+        <h1>The alt Attribute</h1>
+        <p>The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+            <br><br>The value of the alt attribute should describe the image:</p>
+        
+        <h1>Image Size - Width and Height</h1>
+        <p>You can use the style attribute to specify the width and height of an image.</p>
+        <p>Alternatively, you can use the width and height attributes</p>
+        
+        <h1>Width and Height, or Style?</h1>
+        
+        <p>The width, height, and style attributes are all valid in HTML.<br><br>
+
+            However, we suggest using the style attribute. It prevents styles sheets from changing the size of images</p>
+        
+        <h1>Images in Another Folder</h1>
+        
+        <p>If you have your images in a sub-folder, you must include the folder name in the src attribute:</p>
+        
+        <img src="C:/Users/Gaming/Desktop/siva/sun.jpg" alt="Sun" height="300px" width="200px">
+        
+        <h1>Images on Another Server/Website</h1>
+        
+        <p>Some web sites point to an image on another server.<br><br>
+
+            To point to an image on another server, you must specify an absolute (full) URL in the src attribute:</p>
+        
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+        
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1&gt;HTML Image from another Website&lt;/h1&gt;
+                    &lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;"&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        <p><strong>Notes on external images:</strong> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; they can suddenly be removed or changed.</p>
+        
+        <h1>Animated Images</h1>
+        
+        <p>HTML allows animated GIFs:</p>
+        
+        <img src="programming.gif" alt="Programming" width="50px" height="50px">
+        
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1&gt;HTML Image Gif&lt;/h1&gt;
+                    &lt;img src="programming.gif" alt="Programming" width="50px" height="50px"&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h1>Image as a Link</h1>
+        
+        <p>To use an image as a link, put the &lt;img&gt; tag inside the &lt;a&gt; tag:</p>
+        
+        <a href="Home%20Form.html">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        </a>
+        
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1&gt;HTML Image as Link&lt;/h1&gt;
+                    &lt;a href="Home%20Form.html"&gt;
+                        &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
+                    &lt;/a&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h1>Image Floating</h1>
+        
+        <p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
+        
+        <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+            The image will float to the right of the text.</p>
+
+        <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+            The image will float to the left of the text.</p>
+        
+        <table style="clear:both;">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h1&gt;HTML Floating Image&lt;/h1&gt;                    
+                        &lt;p&lt;img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"&gt;
+                        The image will float to the right of the text.&lt;/p&gt;
+                        &lt;p&lt;img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt;
+                        The image will float to the left of the text.&lt;/p&gt;                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h1>Chapter Summary</h1>
+        <ul>
+            <li class="picli">Use the HTML <img> element to define an image</li>
+            <li class="picli">Use the HTML src attribute to define the URL of the image</li>
+            <li class="picli">Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed</li>
+            <li class="picli">Use the HTML width and height attributes or the CSS width and height properties to define the size of the image</li>
+            <li class="picli">Use the CSS float property to let the image float to the left or to the right</li>        
+        </ul>
+        
+        <div>
+            <h1>HTML Image Maps</h1>
+            <p>With HTML image maps, you can create clickable areas on an image.</p>
+            <p>The HTML &lt;map&gt; tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more &lt;area&gt; tags.<br><br>
+
+                Try to click on the computer, phone, or the cup of coffee in the image below:</p>
+            <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+            <map name="workmap">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" href="sun.jpg">
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="smiley.gif">
+              <area shape="circle" coords="337,300,44" alt="Coffee" href="programming.gif">
+            </map>
+            <p>an image map is that you should be able to perform different actions depending on where in the image you click.<br><br>
+
+                To create an image map you need an image, and some HTML code that describes the clickable areas.</p>
+            
+            <h1>The Image</h1>
+            
+            <p>The image is inserted using the &lt;img&gt; tag. The only difference from other images is that you must add a usemap attribute:</p>
+            
+            <p>The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.</p>
+            
+            <h1>Create Image Map</h1>
+            
+            <p>Then, add a &lt;map&gt; element.<br><br>
+
+                The &lt;map&gt; element is used to create an image map, and is linked to the image by using the required name attribute:</p>
+            
+            <p>&lt;map name="workmap"&gt;</p>
+            
+            <p>The name attribute must have the same value as the &lt;img&gt;'s usemap attribute .</p>
+            
+            <h1>The Areas</h1>
+            
+            <p>Then, add the clickable areas.
+
+                A clickable area is defined using an &lt;area&gt; element.</p>
+            
+            <h2>Shape</h2>
+            
+            <p>You must define the shape of the clickable area, and you can choose one of these values:</p>
+            
+            <ul>
+                <li class="picli">rect - defines a rectangular region
+                <li class="picli">circle - defines a circular region</li>
+                <li class="picli">poly - defines a polygonal region</li>
+                <li class="picli">default - defines the entire region</li>          
+            </ul>
+            
+            <p>You must also define some coordinates to be able to place the clickable area onto the image. </p>
+            
+            <h2>Shape="rect"</h2>
+            <p>The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.<br><br>
+
+                So, the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top:</p>
+            <p>The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top:</p>
+            <img src="workplace.jpg" alt="Workplace" usemap="#workmap1" width="400" height="379">
+
+            <map name="workmap1">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            </map>
+            
+            <h2>Shape="circle"</h2>
+            
+            <p>To add a circle area, first locate the coordinates of the center of the circle:<br><br>
+
+                337,300</p>
+            <p>Then specify the radius of the circle:<br><br>
+
+                44 pixels</p>
+            <p>Now you have enough data to create a clickable circular area:</p>
+            
+            <img src="workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379">
+            
+            <map name="workmap2">
+                <area shape="circle" coords="337, 300, 44" href="coffee.htm">
+            </map>
+            
+            <p>This is the area that becomes clickable and will send the user to the page "coffee.htm":</p>
+            
+            <p>Shape="poly"
+
+            The shape="poly" contains several coordinate points, which creates a shape formed with straight lines (a polygon).
+
+            This can be used to create any shape.
+
+            Like maybe a croissant shape!
+
+            How can we make the croissant in the image below become a clickable link?</p>
+            
+            <p>We have to find the x and y coordinates for all edges of the croissant:</p>
+            
+            <img src="frenchfood.jpg" alt="food" usemap="#foodmap" width="450" height="675">
+            
+            <map name="foodmap">
+                <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="food.png" onclick="myfun()">
+            </map>
+            
+            <script>
+                function myfun(){
+                    alert("Siva Prakash");
+                }
+            </script>
+            
+            <h1>Chapter Summary</h1>
+            <ul>
+                <li class="picli">Use the HTML &lt;map&gt; element to define an image map &lt;/map&gt;</li>
+                <li class="picli">Use the HTML &lt;area&gt; element to define the clickable areas in the image map</li>
+                <li class="picli">Use the HTML usemap attribute of the &lt;img&gt; element to point to an image map</li>            
+            </ul>
+        </div>
+        
+        <div>
+            <h1>HTML Background Images</h1>
+            <p>A background image can be specified for almost any HTML element.</p>
+            <h3>Background Image on a HTML element</h3>
+                <p>To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:</p>
+            <p style="background-image: url('frenchfood.jpg'); background-repeat: no-repeat; color:whitesmoke; font-size: 1.5em;">
+                You can specify background images<br>
+                for any visible HTML element.<br>
+                In this example, the background image<br>
+                is specified for a p element.<br>
+                By default, the background-image<br>
+                will repeat itself in the direction(s)<br>
+                where it is smaller than the element<br>
+                where it is specified. (Try resizing the<br>
+                browser window to see how the<br>
+                background image behaves.
+            </p>
+        </div>
+        <picture>
+            <source media="(min-width: 1050px)" srcset="sun.jpg" height="250" width="250">
+            <source media="(min-width: 800px)" srcset="smiley.gif">
+            <img src="food.png" style="width:auto;">    
+        </picture>
+    
+    </body>
+
+</html>

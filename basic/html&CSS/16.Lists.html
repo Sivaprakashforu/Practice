@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="HTML Lists">
+        <title>HTML Lists</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+        <style>
+        
+            @counter-style img1{
+                system: cyclic;
+                symbols: "\21AC" "\21C4" "\21CF" "\21DB" "\21DD" "\21F4" "\21FB";
+                suffix:"  ";
+            }
+            
+            .ulimg{
+                list-style-type: img1;
+            }
+            
+            .nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333333;
+            }
+
+            .nav li {
+              float: left;
+            }
+
+            .nav li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              text-decoration: none;
+            }
+
+            .nav li a:hover {
+              background-color: #111111;
+            }
+            
+            table,tr,th,td{
+                border:1px solid black;
+                
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>HTML Lists</h1>
+        
+        <hr>
+        
+        <p>HTML lists allow web developers to group a set of related items in lists.</p>
+        
+        <h3>Unordered HTML List</h3>
+        
+        <p>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.<br><br>
+
+           The list items will be marked with bullets (small black circles) by default:</p>
+        
+        <h3>Example:</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;ul&gt;
+                        &lt;li&gt;Siva Prakash&lt;/li&gt;
+                        &lt;li&gt;Deepak&lt;/li&gt;
+                        &lt;li&gt;Babu&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <ul>
+            <li>SivaPrakash</li>
+            <li>Deepak</li>
+            <li>Babu</li>
+        </ul>
+        
+        <h1>Ordered HTML List</h1>
+        
+        <p>An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.</p>
+        
+        <p>The list items will be marked with numbers by default:</p>
+        
+         <h3>Example:</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                     &lt;ol&gt;
+                        &lt;li&gt;Siva Prakash&lt;/li&gt;
+                        &lt;li&gt;Deepak&lt;/li&gt;
+                        &lt;li&gt;Babu&lt;/li&gt;
+                    &lt;/ol&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <ol>
+            <li>SivaPrakash</li>
+            <li>Deepak</li>
+            <li>Babu</li>
+        </ol>
+        
+        <h1>HTML Description Lists</h1>
+        
+        <p>HTML also supports description lists.<br><br>
+
+            A description list is a list of terms, with a description of each term.<br><br>
+
+            The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:</p>
+        
+        <h3>Example:</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                     &lt;dl&gt;
+                        &lt;dt&gt;Siva &lt;/dt&gt;
+                        &lt;dd&gt;-Prakash &lt;/dd&gt;
+                        &lt;dt&gt;Deepak &lt;/dt&gt;
+                        &lt;dd&gt;-Babu&lt;/dd&gt;  
+                    &lt;/dl&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <dl>
+            <dt>Siva</dt>
+            <dd>-Prakash</dd>
+            <dt>Deepak</dt>
+            <dd>-Babu</dd>            
+        </dl>
+        <div class="tab">
+        
+        <h1>Unordered HTML List - Choose List Item Marker</h1>
+        
+        <p>The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:</p>
+        
+        <table>
+            <tr >
+                <th>Value</th>
+                <th>Description</th>            
+            </tr>
+            <tr>
+                <td>disc</td>
+                <td>Set the list item to a Bullet(default)</td>
+            </tr>
+            <tr>
+                <td>circle</td>
+                <td>Set the list item to a Circle</td>
+            </tr>
+            <tr>
+                <td>square</td>
+                <td>Set the list item to a Square</td>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>The list items will not be marked</td>
+            </tr>
+        </table>
+        </div>
+        
+        <h3>Example: Disc</h3>
+    
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;ul style="list-style-type:disc;"&gt;
+                        &lt;li&gt;Siva Prakash&lt;/li&gt;
+                        &lt;li&gt;Deepak&lt;/li&gt;
+                        &lt;li&gt;Babu&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <ul style="list-style-type:disc;">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+        </ul>
+        
+        <h3>Example: Circle</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;ul style="list-style-type:circle;"&gt;
+                        &lt;li&gt;Siva Prakash&lt;/li&gt;
+                        &lt;li&gt;Deepak&lt;/li&gt;
+                        &lt;li&gt;Babu&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <ul style="list-style-type:circle;">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+        </ul>
+        
+        <h3>Example: Square</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;ul style="list-style-type:square;"&gt;
+                        &lt;li&gt;Siva Prakash&lt;/li&gt;
+                        &lt;li&gt;Deepak&lt;/li&gt;
+                        &lt;li&gt;Babu&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <ul style="list-style-type:square;">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+        </ul>
+        
+        <h3>Example: None</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;ul style="list-style-type:none;"&gt;
+                        &lt;li&gt;Siva Prakash&lt;/li&gt;
+                        &lt;li&gt;Deepak&lt;/li&gt;
+                        &lt;li&gt;Babu&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <ul style="list-style-type:none;">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+        </ul>
+        
+        <div>
+            <h1>Nested HTML Lists</h1>
+            
+            <p>Lists can be nested (list inside list): That is list inside a list it can be two ul or one ul and ol or dd.</p>
+            
+            <p style="background-color: lightgoldenrodyellow"><mark><strong>Note:</strong></mark> A list item (<li>) can contain a new list, and other HTML elements, like images and links, etc.<br><br>
+            While using the ul list it changes to next style-Disc to circle and square after the square it remines.</p>
+            
+            <h3>Example: None</h3>
+    
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ul&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;SivaN&lt;/li&gt;
+                                &lt;li&gt;Jeeva&lt;/li&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;SivaN&lt;/li&gt;
+                                    &lt;li&gt;Jeeva&lt;/li&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;SivaN&lt;/li&gt;
+                                        &lt;li&gt;Jeeva&lt;/li&gt;
+                                        &lt;li&gt;Sakkara&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;li&gt;Sakkara&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;li&gt;Sakkara&lt;/li&gt;
+                            &lt;/ul&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ul>
+                    <li>Siva Prakash</li>
+                    <li>Deepak</li>
+                    <ul>
+                        <li>SivaN</li>
+                        <li>Jeeva</li>
+                        <ul>
+                            <li>SivaN</li>
+                            <li>Jeeva</li>
+                            <ul>
+                                <li>SivaN</li>
+                                <li>Jeeva</li>
+                                <li>Sakkara</li>
+                            </ul>
+                            <li>Sakkara</li>
+                        </ul>
+                        <li>Sakkara</li>
+                    </ul>
+                    <li>Babu</li>
+            </ul>
+        </div>
+        
+        <div class="nav">
+        
+            <h1>Horizontal List with CSS</h1>
+            
+            <p>HTML lists can be styled in many different ways with CSS.<br><br>
+
+                One popular way is to style a list horizontally, to create a navigation menu:</p>
+            
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ul&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                            &lt;li&gt;Jeeva&lt;li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ul>
+                    <li><a href="#">Siva Prakash</a></li>
+                    <li><a href="#">Deepak</a></li>
+                    <li><a href="#">Jeeva</a></li>
+                    <li><a href="#">Babu</a></li>
+            </ul>
+            <br>
+        </div>
+        <div>
+            <h1>Chapter Summary</h1>
+            <ul>
+                <li class="ulimg">Use the HTML &lt;ul&gt; element to define an unordered list</li>
+                <li class="ulimg">Use the CSS list-style-type property to define the list item marker</li>
+                <li class="ulimg">Use the HTML 
+                <li class="ulimg"> element to define a list item</li>
+                <li class="ulimg">Lists can be nested</li>
+                <li class="ulimg">List items can contain other HTML elements</li>
+                <li class="ulimg">Use the CSS property float:left to display a list horizontally</li>            
+            </ul>         
+        
+        </div>
+        <div class="tab">
+        
+            <h1>Ordered HTML List - The Type Attribute</h1>
+            
+            <p>The type attribute of the &lt;ol&gt; tag, defines the type of the list item marker:</p>
+            
+            <table>
+                <tr>
+                    <th>Value</th>
+                    <th>Description</th>            
+                </tr>
+                <tr>
+                    <td>type ="1"</td>
+                    <td>The list items will be numbered with numbers</td>
+                </tr>
+                <tr>
+                    <td>type="A</td>
+                    <td>The list items will numbered with Uppercase.</td>
+                </tr>
+                <tr>
+                    <td>type="a</td>
+                    <td>The list items will numbered with Lowercase.</td>
+                </tr>
+                <tr>
+                    <td>type="I"</td>
+                    <td>The list items will numbered with uppercase Roman numbers.</td>
+                </tr>
+                <tr>
+                    <td>type="i"</td>
+                    <td>The list items will numbered with lowercase Roman numbers.</td>
+                </tr>
+            </table>
+            
+            <h1>Numbers:</h1>
+            
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ol type="1"&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                            &lt;li&gt;Jeeva&lt;li&gt;
+                        &lt;/ol&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ol type="1">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+                <li>Jeeva</li>
+            </ol>
+            
+            <h1>Uppercase:</h1>
+            
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ol type="A"&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                            &lt;li&gt;Jeeva&lt;li&gt;
+                        &lt;/ol&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ol type="A">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+                <li>Jeeva</li>
+            </ol>
+            
+            <h1>Lowercase:</h1>
+            
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ol type="a"&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                            &lt;li&gt;Jeeva&lt;li&gt;
+                        &lt;/ol&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ol type="a">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+                <li>Jeeva</li>
+            </ol>
+            
+            <h1>Uppercase Roman:</h1>
+            
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ol type="I"&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                            &lt;li&gt;Jeeva&lt;li&gt;
+                        &lt;/ol&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ol type="I">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+                <li>Jeeva</li>
+            </ol>
+            
+            <h1>Lowercase Roman:</h1>
+            
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ol type="i"&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                            &lt;li&gt;Jeeva&lt;li&gt;
+                        &lt;/ol&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ol type="i">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+                <li>Jeeva</li>
+            </ol>
+            
+            <h1>Control List Counting</h1>
+            
+            <p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:</p>
+            
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ol start="10"&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                            &lt;li&gt;Jeeva&lt;li&gt;
+                        &lt;/ol&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ol start="10">
+                <li>Siva Prakash</li>
+                <li>Deepak</li>
+                <li>Babu</li>
+                <li>Jeeva</li>
+            </ol>
+            
+            <h1>Nested HTML Lists</h1>
+            
+            <p>Lists can be nested (list inside list):</p>
+            
+             <h3>Example: None</h3>
+    
+            <table style="border: 1px solid black; width:40%">
+             <td>
+                <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;ul&gt;
+                            &lt;li&gt;Siva Prakash&lt;/li&gt;
+                            &lt;li&gt;Deepak&lt;/li&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;SivaN&lt;/li&gt;
+                                &lt;li&gt;Jeeva&lt;/li&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;SivaN&lt;/li&gt;
+                                    &lt;li&gt;Jeeva&lt;/li&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;SivaN&lt;/li&gt;
+                                        &lt;li&gt;Jeeva&lt;/li&gt;
+                                        &lt;li&gt;Sakkara&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;li&gt;Sakkara&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;li&gt;Sakkara&lt;/li&gt;
+                            &lt;/ul&gt;
+                            &lt;li&gt;Babu&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre></td>
+            </table>
+
+            <h3>Output:</h3>
+            <ol>
+                    <li>Siva Prakash</li>
+                    <li>Deepak</li>
+                    <ol type="A">
+                        <li>SivaN</li>
+                        <li>Jeeva<ol>
+                            <li>SivaN</li>
+                            <li>Jeeva</li>
+                            <ol>
+                                <li>SivaN</li>
+                                <li>Jeeva</li>
+                                <li>Sakkara</li>
+                            </ol>
+                            <li>Sakkara</li>
+                        </ol></li>
+                        
+                        <li>Sakkara</li>
+                    </ol>
+                    <li>Babu</li>
+            </ol>
+        </div>
+        
+        <p style="background-color: lightgoldenrodyellow;"><mark><strong>Note:</strong></mark> A list item (&lt;li&gt;) can contain a new list, and other HTML elements, like images and links, etc.</p>
+        
+        <h1>Chapter Summary</h1>
+        
+        <ul>
+            <li class="ulimg">Use the HTML &lt;ol&gt; element to define an ordered list</li>
+            <li class="ulimg">Use the HTML <mark>type</mark> attribute to define the numbering type</li>
+            <li class="ulimg">Use the HTML &lt;li&gt; element to define a list item</li>
+            <li class="ulimg">Lists can be nested</li>
+            <li class="ulimg">List items can contain other HTML elements</li>        
+        </ul>
+        
+        
+    
+    </body>
+
+</html>

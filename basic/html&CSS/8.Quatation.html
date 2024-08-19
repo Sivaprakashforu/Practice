@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="Paragraph">
+        <title>Paragraph Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    
+    <body>
+        
+        <h1>HTML Quotation and Citation Elements</h1>
+        
+        <hr>
+        
+        <p> the &lt;blockquote&gt;,&lt;q&gt;, &lt;abbr&gt;, &lt;address&gt;, &lt;cite&gt;, and &lt;bdo&gt; HTML elements.</p>
+        
+        <h3>HTML &lt;blockquote&gt; for Quotations</h3>
+        
+        <p>The HTML &lt;blockquote&gt; element defines a section that is quoted from another source.<br><br>
+
+            Browsers usually indent &lt;blockquote&gt; elements.</p>
+        
+        <h3>Example:</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;
+                    &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+                    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+                    &lt;/blockquote&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+        
+        <h3>HTML &lt;q&gt; for Short Quotations</h3>
+        
+        <p>The HTML &lt;q&gt; tag defines a short quotation.<br><br>
+
+            Browsers normally insert quotation marks around the quotation.</p>
+        
+        <h3>Example:</h3>
+    
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;:&lt;/p&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+        
+        <h3>HTML &lt;abbr&gt; for Abbreviations</h3>
+        
+        <p>The HTML &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".<br><br>
+
+            Marking abbreviations can give useful information to browsers, translation systems and search-engines.<br><br>
+
+            Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. </p>
+        
+        <h3>Example:</h3>
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        
+        <h3>HTML &lt;address&gt; for Contact Information</h3>
+        
+        <p>The HTML &lt;address&gt; tag defines the contact information for the author/owner of a document or an article.
+
+        The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+
+        The text in the &lt;address&gt; element usually renders in italic, and browsers will always add a line break before and after the &lt;address&gt; element.</p>
+        
+        <h3>Example:</h3>
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                &lt;address&gt;
+                        Written by John Doe.&lt;br&gt;
+                        Visit us at:&lt;br&gt;
+                        Example.com&lt;br&gt;
+                        Box 564, Disneyland&lt;br&gt;
+                        USA
+                &lt;address&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        
+        <h3>HTML &lt;cite&gt; for Work Title</h3>
+        
+        <p>The HTML &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+
+        Note: A person's name is not the title of a work.
+
+        The text in the &lt;cite&gt; element usually renders in italic.</p>
+    
+        <h3>Example:</h3>
+        <table style="border: 1px solid black; width:40%">
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    <p>&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.</p>
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+        
+        <h3>HTML &lt;bdo&gt; for Bi-Directional Override</h3>
+        
+        BDO stands for Bi-Directional Override.
+
+        The HTML &lt;bdo&gt; tag is used to override the current text direction:
+        
+        <h3>Example:</h3>
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;
+                    
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <bdo dir="rtl">This text will be written from right to left</bdo>
+    
+    </body>
+
+</html>

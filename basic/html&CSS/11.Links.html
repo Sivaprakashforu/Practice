@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="Links">
+        <title>Links</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+        <style>
+
+            /*li{
+                list-style: none;
+                padding: 5PX;
+            }
+             li::before{
+                  content: "🐶 "; 
+            } */
+            
+            @counter-style single-emoji {
+              system: cyclic;
+              symbols: "\1F5E3";// unicode code point
+              suffix: "  ";
+            }
+
+            .single-counter-rule {
+              list-style-type: single-emoji;
+            }
+            
+            .alink a:link {
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }
+
+            .alink a:visited {
+              color: pink;
+              background-color: transparent;
+              text-decoration: none;
+            }
+
+            .alink a:hover {
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+
+            .alink a:active {
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            
+            .button a:link,.button a:visited {
+              background-color: #f44336;
+              color: white;
+              padding: 15px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
+
+            .button a:hover,.button a:active {
+              background-color: red;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Links</h1>
+        
+        <hr>
+        
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        
+        <p>HTML links are hyperlinks.<br><br>
+
+            You can click on a link and jump to another document.<br><br>
+
+            When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+        
+        <h1>HTML Links - Syntax</h1>
+        
+        <p>The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:</p>
+            
+            &lt;a href="url"&gt;link text&lt;/a&gt;
+
+            <p>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.<br><br>
+
+                The link text is the part that will be visible to the reader.<br><br>
+
+                Clicking on the link text, will send the reader to the specified URL address.</p>
+        
+        <h3>Example:</h3>
+    
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;a href="https://www.bigprime.net/"&gt;Visit Bigprime!&lt;/a&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></td>
+        </table>
+        
+        <h3>Output:</h3>
+        <a href="https://www.bigprime.net/">Visit Bigprime!</a>
+        
+    
+        <p>By default, links will appear as follows in all browsers:<br><br>
+
+            An unvisited link is underlined and blue<br>
+            A visited link is underlined and purple<br>
+            An active link is underlined and red</p>
+        
+        <h1>HTML Links - The target Attribute</h1>
+        
+        <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.<br><br>
+
+        The target attribute specifies where to open the linked document.<br><br>
+
+        The target attribute can have one of the following values:</p>
+
+        <ul>
+            <li class="single-counter-rule">_self - Default. Opens the document in the same window/tab as it was clicked</li>
+            <li class="single-counter-rule">_blank - Opens the document in a new window or tab</li>
+            <li class="single-counter-rule">_parent - Opens the document in the parent frame</li>
+            <li class="single-counter-rule">_top - Opens the document in the full body of the window</li>
+        </ul>
+        
+        <div>
+            
+            <h1>Absolute URLs vs. Relative URLs</h1>
+            
+            <p>Both examples above are using an absolute URL (a full web address) in the href attribute.</p>
+            
+            <p>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):</p>
+            
+            <h2>Absolute URLs</h2>
+            <p><a href="https://www.bigprime.net/">Bigprime</a></p>
+            <p><a href="https://www.grapelabs.net/">Grapelabs</a></p>
+
+            <h2>Relative URLs</h2>
+            <p><a href="2.Headings.html">Headings</a></p>
+            <p><a href="sun.jpg">Image</a></p>
+            
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;h2&gt;Absolute URLs &lt;/h2&gt;
+                    &lt;a href="https://www.bigprime.net/"&gt;Bigprime!&lt;/a&gt;
+                    &lt;a href="https://www.grapelabs.net/"&gt;Grapelabs!&lt;/a&gt;
+                    
+                    &lt;h2&gt;Relative URLs &lt;/h2&gt;
+                    &lt;a href="2.headings.html"&gt;Headings&lt;/a&gt;
+                    &lt;a href="sun.jpg"&gt;Image&lt;/a&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            </td>
+        </table>
+            
+        <h1>HTML Links - Use an Image as a Link</h1>
+        
+        <p>To use an image as a link, just put the &lt;img&gt; tag inside the &lt;a&gt; tag:</p>
+            
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                   &lt;h2&gt;Image as a Link &lt;/h2&gt;
+
+                   &lt;p&gt;The image below is a link. Try to click on it.&lt;/p&gt;
+                   &lt;a href="sun.jpg"&gt;&lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;&lt;/a&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            </td>
+        </table>
+        
+        <h2>Image as a Link </h2>
+
+        <p>The image below is a link. Try to click on it.</p>
+        <a href="sun.jpg"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>        
+        
+        </div>
+        
+        <div>
+            
+            <h1>Link to an Email Address</h1>
+            
+            <p>Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):</p>
+            
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                   &lt;h2&gt;Link to an Email Address &lt;/h2&gt;
+
+                   &lt;p&gt;To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:&lt;/p&gt;
+                   &lt;p&gt;&lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;&lt;/p&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            </td>
+        </table>
+        
+        <p><a href="mailto:someone@example.com">Send email</a></p>
+        
+        </div>
+        <div class="alink">
+        
+            <h1>HTML Links - Different Colors</h1>
+            
+            <p>An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.</p>
+            
+            <h2>HTML Link Colors</h2>
+            
+            <p>By default, a link will appear like this (in all browsers):
+
+                An unvisited link is underlined and blue<br>
+                A visited link is underlined and purple<br>
+                An active link is underlined and red<br>
+                You can change the link state colors, by using CSS:</p>
+            
+            <h1>Example</h1>
+            
+            <p>Here, an unvisited link will be green with no underline.<br> A visited link will be pink with no underline.<br> An active link will be yellow and underlined.<br> In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+            
+            <h2>Link Colors</h2>
+
+            <p>You can change the default colors of links</p>
+
+            <a href="sun.jpg" target="_blank">HTML Images</a> 
+            
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;style&gt;
+                        a:link {
+                          color: green;
+                          background-color: transparent;
+                          text-decoration: none;
+                        }
+
+                        a:visited {
+                          color: pink;
+                          background-color: transparent;
+                          text-decoration: none;
+                        }
+
+                        a:hover {
+                          color: red;
+                          background-color: transparent;
+                          text-decoration: underline;
+                        }
+
+                        a:active {
+                          color: yellow;
+                          background-color: transparent;
+                          text-decoration: underline;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                   &lt;h2&gt;Link Colors &lt;/h2&gt;
+
+                   &lt;p&gt;You can change the default colors of links&lt;/p&gt;
+                   &lt;p&gt;&lt;href="sun.jpg" target="_blank"&gt;Send email&lt;/a&gt;&lt;/p&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            </td>
+        </table>            
+        </div>
+        <div class="button">
+            <h1>Link Buttons</h1>
+            <p>A link can also be styled as a button, by using CSS:</p>
+            
+            <h2>Link Button</h2>
+            <p>A link styled as a button:</p>
+            <a href="Home%20Form.html" target="_blank">This is a link</a><br><br>
+               
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;style&gt;
+                      a:link, a:visited {
+                          background-color: #f44336;
+                          color: white;
+                          padding: 15px 25px;
+                          text-align: center;
+                          text-decoration: none;
+                          display: inline-block;
+                        }
+
+                        a:hover, a:active {
+                          background-color: red;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                   &lt;h2&gt;Link Colors &lt;/h2&gt;
+
+                   &lt;p&gt;A link styled as a button:&lt;/p&gt;
+                   &lt;p&gt;&lt;href="Home%20Form.html" target="_blank"&gt;This is a link&lt;/a&gt;&lt;/p&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            </td>
+        </table>  
+        </div>
+        
+        <div>
+            <h1>HTML Links - Create Bookmarks</h1>
+            <p>HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.</p>
+            
+            <h2>Create a Bookmark in HTML</h2>
+            <p>Bookmarks can be useful if a web page is very long.<br><br>
+
+                To create a bookmark - first create the bookmark, then add a link to it.<br><br>
+
+                When the link is clicked, the page will scroll down or up to the location with the bookmark.</p>
+            <h2>Example</h2>
+            <p>First, use the id attribute to create a bookmark:</p>
+            &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+            
+            <p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+            
+                <p><a href="#C4">Jump to Chapter 4</a></p>
+                <p><a href="#C10">Jump to Chapter 10</a></p>
+
+                <h2>Chapter 1</h2>
+                <p>This chapter Chapter 1</p>
+
+                <h2>Chapter 2</h2>
+                <p>This chapter Chapter 2</p>
+
+                <h2>Chapter 3</h2>
+                <p>This chapter Chapter 3</p>
+
+                <h2 id="C4">Chapter 4</h2>
+                <p>This chapter Chapter 4</p>
+
+                <h2>Chapter 5</h2>
+                <p>This chapter Chapter 5</p>
+
+                <h2>Chapter 6</h2>
+                <p>This chapter Chapter 6</p>
+
+                <h2>Chapter 7</h2>
+                <p>This chapter Chapter 7</p>
+
+                <h2>Chapter 8</h2>
+                <p>This chapter Chapter 8</p>
+
+                <h2>Chapter 9</h2>
+                <p>This chapter Chapter 9</p>
+
+                <h2 id="C10">Chapter 10</h2>
+                <p>This chapter Chapter 10</p>
+
+                <h2>Chapter 11</h2>
+                <p>This chapter Chapter 11</p>
+
+                <h2>Chapter 12</h2>
+                <p>This chapter Chapter 12</p>
+
+                <h2>Chapter 13</h2>
+                <p>This chapter Chapter 13</p>
+
+                <h2>Chapter 14</h2>
+                <p>This chapter Chapter 14</p>
+
+     
+            
+        <table>
+         <td>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                
+                    &lt;p&gt;&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;&lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;a href="#C10"&gt;Jump to Chapter 10&lt;/a&gt;&lt;/p&gt;
+
+
+                   &lt;h2&gt;Chapter 1 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 1&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 2 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 2&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 3 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 3&lt;/p&gt;
+                   
+                   &lt;h2 id="C4"&gt;Chapter 4 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 4&lt;/p&gt;
+
+                    &lt;h2&gt;Chapter 5 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 5&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 6 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 6&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 7 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 7&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 8 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 8&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 9 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 9&lt;/p&gt;
+                   
+                   &lt;h2 id="C10"&gt;Chapter 10 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 10&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 11 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 11&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 12 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 12&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 13 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 13&lt;/p&gt;
+                   
+                   &lt;h2&gt;Chapter 14 &lt;/h2&gt;
+
+                   &lt;p&gt;This is Chapter 14&lt;/p&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            </td>
+        </table> 
+            
+        <p>You can also add a link to a bookmark on another page:</p>
+        
+        &lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+        
+        <h1>Chapter Summary</h1>
+
+        <ul>
+            
+            <li class="single-counter-rule">Use the id attribute (id="value") to define bookmarks in a page</li>
+        
+            <li class="single-counter-rule">Use the href attribute (href="#value") to link to the bookmark</li>
+            
+        </ul>
+        </div>
+    </body>
+
+</html>

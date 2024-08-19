@@ -1,0 +1,19 @@
+*{
+    color:#800000;
+    
+}
+
+table{
+    border: 1px solid #ac3939!important;
+    border-spacing: 5px 5px;
+    width:1450px;    
+}
+
+tr,th,td{
+    border: 1px solid black;
+}
+tr:hover {background-color: #D6EEEE;}
+
+hr{
+    border: 1px solid #ac3939!important;
+}
