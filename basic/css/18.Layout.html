@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Layout">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Layout</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+        
+        <style>
+            
+            
+        
+            body{
+                width:1200px;
+                margin:0 auto;
+                font:10pt/1.5em "Georgua", Arial,sans-serif;
+            }
+            
+            header,section,article,aside,footer{
+                display: block;
+            }
+            
+            header,footer,h2{
+                padding: 0px;
+                text-align: center;
+            }
+            nav{
+                text-align: center;
+
+            }
+            h1{color:darkmagenta;}
+            
+            nav ul{ list-style-type: none;
+                padding: 0;
+                margin-bottom: 0;
+            }
+            
+            nav li{
+                display: inline-block;
+                margin: 0 0 0 50px;
+                width:150px;
+            }
+            
+            
+            aside ul{list-style-type: none;}
+            
+            aside.left{
+                float:left;
+            }
+            
+            aside.right{
+                float:right;
+            }
+
+            section{
+                float:left;
+                width:700px;
+                padding-left: 30px;
+                letter-spacing: 1.5px;
+                word-spacing: 1em;
+                
+                border-left: 2px dashed silver;
+                border-right: 2px dashed silver;
+            }
+            h2{
+                font-family: "Playwrite FR Moderne", sans-serif;
+            }
+            p::first-letter{
+                font-size: 50px;
+            }
+            footer{
+                clear:both ! important;
+                margin-top: 50px;
+            }
+            
+            a:link{color:brown; }
+            
+            footer>hr{margin-bottom: 20px;}
+            
+        </style>
+    
+    </head>
+    
+    <body>
+    
+        <header>
+            <h1>Today's News</h1>
+            <hr> 
+        </header>
+        <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>                
+                </ul>
+
+            <hr>
+        
+        </nav>
+        <aside class="left">
+            <figure>
+                <img src="food.png" alt="food"height="150px" width="150px">
+                <figcaption>Food</figcaption>
+            </figure>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>                
+                </ul>
+            </div>
+        
+        </aside>
+        <section>
+            
+            <article>
+                
+                <h2><u>Article</u></h2>
+                
+                <p>
+                    <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum</strong> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a <em>galley of type</em> and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <footer><em>#End of the Article 1.</em></footer>
+            
+            </article>
+            <hr>
+            
+            <article>
+                
+                <h2><u>Article 2</u></h2>
+                
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).                
+                </p>
+                <footer><em>#End of the Article 2.</em></footer>
+                            
+            </article>
+        
+        
+        </section>
+        
+        <aside class="right">
+            <figure>
+                <img src="food.png" alt="food"height="150px" width="150px">
+                <figcaption>Food</figcaption>
+            </figure>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>                
+                </ul>
+            </div>
+        
+        </aside>
+        
+        
+        <footer>
+            <hr>Copyrights &copy; <a href="https://www.bigprime.net">BIGPRIME.net</a></footer>
+    
+    </body>
+
+
+
+</html>

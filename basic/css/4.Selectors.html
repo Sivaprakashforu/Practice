@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="External CSS">
+        <meta name="viewport" content="width=device-width;intial-scale=1.0">
+        <style>
+            
+            *{color:white; text-align: justify;}
+            /*Universal Selector*/
+            
+            body{background-color: burlywood }
+            /*Type Selectors*/
+            
+            h1{text-align: center;}
+            /*Type Selectors*/
+            
+            ul{font-size:120%;}
+            /*Type Selectors*/
+            
+            hr{border: 2px solid silver;}
+            /*Type Selectors*/
+            
+            .hp{ text-align: center;}
+            /*Class Selectors*/
+            
+            #cp{text-align:right;}
+            /*ID Selectors*/
+            
+            p[class]{color:blue;}
+            /*Attribute Selectors*/
+            
+            p[id]{color:red};
+            /*Attribute Selectors*/
+            
+            h1[class]{color:red;}
+            /*Attribute Selectors*/
+            
+            p>a{color:blue;}
+            /*Child Selectors*/
+            
+            body p{font-weight:bold; font-size: 150%;}
+            /*Descendant Selector=>all the child of the body p as they selected*/
+            
+            div + a{font-size:200%;}
+            /*Adjacent Sibling Selector=>Next to div and equal them */
+            
+            div ~ a{font-size:500%;}
+            
+        
+        </style>
+        <title>External CSS</title>
+    
+    </head>
+    
+    <body>
+        <h1 class="hp">Heading</h1>
+        <p class="hp">Heading Paragraph.</p>
+        <hr>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <p id="cp">Content <a href="External%20CSS.html">External</a> Paragraph</p>
+        <a href="External%20CSS.html">External</a>
+        
+        <div></div>
+        
+        <a href="External%20CSS.html">External</a>
+        
+        <p id="cp">Content <a href="External%20CSS.html">External</a> Paragraph</p>
+        
+        <a href="External%20CSS.html">External</a>
+        
+        
+    </body>
+
+</html>

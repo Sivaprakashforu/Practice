@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="External CSS">
+        <meta name="viewport" content="width=device-width;intial-scale=1.0">
+        <style>
+            
+            /*border-style property specifies what kind of border to display.
+            
+            dotted - Defines a dotted border
+            dashed - Defines a dashed border
+            solid - Defines a solid border
+            double - Defines a double border
+            groove - Defines a 3D grooved border. The effect depends on the border-color value
+            ridge - Defines a 3D ridged border. The effect depends on the border-color value
+            inset - Defines a 3D inset border. The effect depends on the border-color value
+            outset - Defines a 3D outset border. The effect depends on the border-color value
+            none - Defines no border
+            hidden - Defines a hidden border
+            
+            The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+            
+             border-top-style:Apply the style of the top line of border.
+             border-right-style: Apply the style of the right line of border.
+             border-bottom-style:Apply the style of the bottom line of border.
+             border-left-style: Apply the style of the left line of border.
+            
+             border-color: property is used to set the color of the four borders.
+            
+             border-radius: property is used to add rounded borders to an element;
+            */
+            
+            body
+            {
+                background-color: blanchedalmond;
+            }
+            
+            div
+            {
+                border-style: solid;
+                border-color: blue;
+                border-top-style: dashed;
+                border-bottom-style: dotted;
+            }
+            
+            .box
+            {
+                background-color: violet;
+                height: 100px;
+                width:200px;
+                float:left;
+                margin-top: 10px;
+                margin-right: 5px;
+                color:aliceblue;
+                text-align: center;
+                padding-top: 60px;
+            }
+            
+            .box1
+            {
+                background-color: violet;
+                height: 100px;
+                width:200px;
+                float:none;
+                margin-top: 10px;
+                margin-right: 5px;
+                color:aliceblue;
+                text-align: center;
+                padding-top: 60px;
+            }
+            
+            .red
+            {
+                border:5px solid red;
+            }
+            
+            .green
+            {
+                border:5px solid green;
+            }
+            
+            p.dotted {border-style: dotted;}
+            
+            p.dashed {border-style: dashed;}
+            
+            p.solid {border-style: solid;}
+            
+            p.double {border-style: double;}
+            
+            p.groove {border-style: groove;}
+            
+            p.ridge {border-style: ridge;}
+            
+            p.inset {border-style: inset;}
+            
+            p.outset {border-style: outset;}
+            
+            p.none {border-style: none;}
+            
+            p.hidden {border-style: hidden;}
+            
+            p.mix {border-style: dotted dashed solid double;}
+            
+            .green-border{
+                border:5px solid green;
+                margin-top: 25px;
+            }
+            
+            .blue-border{
+                border:5px solid blue;
+                margin-top:25px;
+                margin-left: 50px;
+            }
+            
+            .brown-border{
+                border:5px solid brown;
+                margin-top: 25px;
+                margin-left: 100px;
+            }
+                    
+        </style>
+        <title>CSS Box</title>
+    
+    </head>
+    
+    <body>
+        
+        <h1>This is the Box styles in HTML CSS.</h1>
+        
+        <div> This the Red color box.</div>
+        
+        <div class="box red"> This the Red color box.</div>
+        
+        <div class="box red"> This the Red color box.</div>
+        
+        <div class="box red"> This the Red color box.</div>
+        
+        <div class="box green"> This the Green color box.</div>
+        <div class="box green"> This the Green color box.</div>
+        <div class="box1 green"> This the Green color box.</div>
+        
+        
+        <div class="box1"> This the Red color box.</div>
+        
+        
+        <p class="dotted green-border">A dotted border.</p>
+        
+        <p class="dashed green-border">A dashed border.</p>
+        
+        <p class="solid green-border">A solid border.</p>
+        
+        <p class="double blue-border">A double border.</p>
+        
+        <p class="groove blue-border">A groove border.</p>
+        
+        <p class="ridge blue-border">A ridge border.</p>
+        
+        <p class="inset brown-border">A inset border.</p>
+        
+        <p class="outset brown-border">A outset border.</p>
+        
+        <p class="none brown-border">A none border.</p>
+        
+        <p class="hidden green-border">A hidden border.</p>
+        
+        <p class="mix blue-border">A mix border.</p>
+        
+        
+        <hr>
+        
+        
+
+        
+    </body>
+
+</html>

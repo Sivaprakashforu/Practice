@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Layout">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Layout</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+        
+        <style>
+            
+            
+            *, *:before, *after
+            {
+                
+                box-sizing: border-box;
+            }
+            
+            
+        
+            body
+            {
+                background-color: skyblue;
+                color:white;
+                text-align: center;
+                margin:0;
+                font-family: Helvetica;
+            }
+            
+
+            
+            header,nav,section,footer
+            {
+                border: 1px solid rgba(255,255,255,0.8);
+                margin-bottom: 10px;
+                border-radius: 3px;
+            }
+            
+            header,footer{
+                padding: 20px 0;
+            }
+            nav,section{
+                padding: 200px 0;
+            }
+            
+            .container{
+                width: 960px;
+                margin: 0 auto;
+            }
+            nav,section,footer{
+                float:left;
+            }
+            nav{
+                width: 200px;
+                margin-right: 10px;
+            }
+            section{
+                width:745px;
+            }
+            footer{
+                width: 960px;
+            }
+        </style>
+    
+    </head>
+    
+    <body>
+    
+        <div class="container">
+        <h1>Project 1:Simple Layout</h1>
+        <header>Header</header>
+        
+        <nav>Nav</nav>
+        
+        <section>Section</section>
+        
+        <footer>Footer</footer>
+        </div>
+        
+        
+        
+    </body>
+
+
+
+</html>
