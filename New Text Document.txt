@@ -268,4 +268,40 @@ Some Projects Online
 https://phpgurukul.com/php-projects-free-downloads/
 https://www.zend.com/blog/php-beginner-projects
 
+1. Product Rating System.
+2. Movie Recommendation App.
+3. Portal for Doctors.
+4. Automatic timetable Creations.
+5. Predict User behaviour.?
+6. Ecommerce Website.
+7. Online Blood Bank.!
+8. Clothes Recommendation System.
+9. Ad Dispenser Server. ?
+10. Image processing and Generation.
+11. Online Shopping Project.
+12. Insurance Policy Management System.
+13. Online Attendance Management System.
+14. Hotel Booking System Using Pdo in PHP and Mysql.
+15. Simple Student Attendance Management.
+16. Ecommerce Website.
+17. Responsive School Management.
+18. Billing Software Management System.
+19. Event Management System In PHP.
+20. Music Management System.
+21. Rental Management Panel System.
+22. College Management System.
+23. Food Management System.
+24. Bus Ticket Reservation System.
+
+Best Website for samples: https://nevonprojects.com/php-projects-topics-ideas/
+https://projectworlds.in/free-projects/php-projects/
+
+Some project Ideas.
+https://codeshoppy.com/php-projects-titles-topics.html
+https://phpgurukul.com/php-projects-list-for-final-year-students-with-source-code-project-reports/
+https://www.kashipara.com/project/php-project_2
+
+https://code.tutsplus.com/10-best-crm-project-management-php-scripts--cms-28943t
+
+
 
